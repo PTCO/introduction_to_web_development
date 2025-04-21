@@ -150,10 +150,14 @@ button:hover {
     padding: 0 !important;
 }
 
-.project-info {
+.project-info, footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+footer p {
+    text-align: center !important;
 }
 
 .modal{
