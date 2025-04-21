@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A developer portfolio showcasing projects and skills.">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Developer Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <button id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+        </button>
+    </header>
+    <nav id="menu" role="navigation">
+        <ul>
+            <li><a href="#about" role="menuitem">About Me</a></li>
+            <li><a href="#about" role="menuitem">About Me</a></li>
+            <li><a href="#projects" role="menuitem">Projects</a></li>
+            <li><a href="#skills" role="menuitem">Skills</a></li>
+            <li><a href="#contact" role="menuitem">Contact Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about me</p>
+        </section>
+        <section id="projects">
+            <input type="text" name="" id="filterInput" placeholder="Filter projects...">
+            <article class="category">
+                <figure>
+                    <img src="./Project_1.jpg" class="project-image" alt="Project 1 Image">
+                    <figcaption>Project 1</figcaption>
+                </figure>
+                <div class="project-info">
+                    <h3 class="">Web</h3>
+                </div>
+                <p>Description of project 1.</p>
+            </article>
+            <article class="category">
+                <figure>
+                    <img src="./Project_2.jpg" class="project-image" alt="Project 2 Image">
+                    <figcaption>Project 2</figcaption>
+                </figure>
+                <div class="project-info">
+                    <h3 class="">Mobile APP</h3>
+                </div>
+                <p>Description of project 2.</p>
+            </article>
+            <article class="category">
+                <figure>
+                    <img src="./Project_3.jpg" class="project-image" alt="Project 3 Image">
+                    <figcaption>Project 3</figcaption>
+                </figure>
+                <div class="project-info">
+                    <h3 class="">Web</h3>
+                </div>
+                <p>Description of project 3.</p>
+            </article>
+            <article class="category">
+                <figure>
+                    <img src="./Project_4.jpg" class="project-image" alt="Project 4 Image">
+                    <figcaption>Project 4</figcaption>
+                </figure>
+                <div class="project-info">
+                    <h3 class="">Web</h3>
+                </div>
+                <p>Description of project 4.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, and JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Frameworks and Libraries (React, Angular, Vue.js)</li>
+                <li>Backend Development (Node.js, Express)</li>
+                <li>Database Management (SQL, MongoDB)</li>
+                <li>Testing and Debugging</li>
+                <li>Cross-Browser Compatibility</li>
+                <li>Problem-Solving and Critical Thinking</li>
+                <li>Agile and Scrum Methodologies</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email or phone.</p>
+            <form action="/submit-form" id="contactForm" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+                <br>
+                <p id="formErrors"></p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <aside id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <img id="modalImage" src="" alt="Project Image">
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
